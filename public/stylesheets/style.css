@@ -1,0 +1,29 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.171),rgba(0, 0, 0, 0.363)),url('../images/Background.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0rem;
+}
+form{
+    background-color: bisque;
+    border-radius: 3rem;
+    box-shadow: 0rem 0rem 5rem rgba(255, 228, 196, 0.452);
+    padding: 2rem 3rem;
+    flex-direction: column;
+    display: flex;
+}
