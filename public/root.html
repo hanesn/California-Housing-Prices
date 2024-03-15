@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Housing Prices</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <div class="predict"></div>
+    <h1>California Housing Prices</h1>
+    <div class="container-wrapper-outer">
+        <form action="/submit" method="post">
+            <div class="container-wrapper">
+                <label for="Longitude">Longitude</label>
+                <input type="number" name="Longitude" id="Longitude">
+            </div>
+            <div class="container-wrapper">
+                <label for="Latitude">Latitude</label>
+                <input type="number" name="Latitude" id="Latitude">
+            </div>
+            <div class="container-wrapper">
+                <label for="Housing-median-age">Housing median age</label>
+                <input type="number" name="Housing-median-age" id="Housing-median-age">
+            </div>
+            <div class="container-wrapper">
+                <label for="Total-rooms">Rooms</label>
+                <input type="number" name="Total-rooms" id="Total-rooms">
+            </div>
+            <div class="container-wrapper">
+                <label for="Total-bedrooms">Bedrooms</label>
+                <input type="number" name="Total-bedrooms" id="Total-bedrooms">
+            </div>
+            <div class="container-wrapper">
+                <label for="Population">Population</label>
+                <input type="number" name="Population" id="Population">
+            </div>
+            <div class="container-wrapper">
+                <label for="Households">Households</label>
+                <input type="number" name="Households" id="Households">
+            </div>
+            <div class="container-wrapper">
+                <label for="Median-income">Income</label>
+                <input type="number" name="Median-income" id="Median-income">
+            </div>
+            <div class="container-wrapper">
+                <label for="Ocean-proximity">Ocean Proximity</label>
+                <select name="Ocean-proximity" id="Ocean-proximity">
+                    <option value="1H Ocean">&lt;1H Ocean</option>
+                    <option value="Inland">Inland</option>
+                    <option value="Island">Island</option>
+                    <option value="Near Bay">Near Bay</option>
+                    <option value="Near Ocean">Near Ocean</option>
+                </select>
+            </div>
+    
+        </form>
+        <button class="btn" onclick="submit()">Submit</button>
+    </div>
+    <script src="javascripts/script.js"></script>
+</body>
+</html>
