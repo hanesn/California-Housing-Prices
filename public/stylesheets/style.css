@@ -27,3 +27,28 @@ form{
     flex-direction: column;
     display: flex;
 }
+.container-wrapper-outer{
+    margin: 4rem 35rem;
+}
+.container-wrapper{
+    display: flex;
+    flex-direction: row;
+    font-size: 2.2rem;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+}
+.container-wrapper input,select{
+    padding: .5rem 0.5rem;
+    border: none;
+    border-bottom: .15rem solid rgba(0, 0, 0, 0.308);
+    background-color: rgba(255, 222, 173, 0);
+    font-size: 2rem;
+    width: 40%;
+    transition-duration: .2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+.container-wrapper input:focus,select:focus{
+    outline: none;
+    border-bottom: .15rem solid rgba(0, 0, 0, 0.842);
+}
