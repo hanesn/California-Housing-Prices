@@ -52,3 +52,40 @@ form{
     outline: none;
     border-bottom: .15rem solid rgba(0, 0, 0, 0.842);
 }
+.predict{
+    position: fixed;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0rem auto;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(46, 61, 15);
+    color: greenyellow;
+    border-radius: 3rem;
+    border: .2rem solid greenyellow;
+    padding: 1rem 2rem;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes popUp {
+    0% {
+        top: -10rem;
+        visibility: visible;
+    }
+    100% {
+        top: 4rem;
+    }
+}
+@keyframes moveBack{
+    0%{
+        top: 4rem;
+    }
+    100%{
+        top: -10rem;
+        visibility: hidden;
+    }
+}
