@@ -29,6 +29,19 @@ async function submit(){
                 Ocean_proximity:Ocean_proximity.value
             })
         });
+        if(response.status===200){
+            const data=await response.json();
+            // console.log(data.predictedValue);
+            predict.innerHTML=`<h2>Predicted House Price: ${data.predictedValue}$</h2>`
+            predict.style.visibility='visible';
+            predict.style.animationName='popUp';
+            setTimeout(()=>{
+                predict.style.animationName='moveBack';
+            },5000)
+        }
+        else{
+            console.log('Error: Server responded with status',response.status);
+        }
     }
     catch(error){
         console.log('Error: ',error);
