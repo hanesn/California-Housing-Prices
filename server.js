@@ -13,6 +13,21 @@ app.use(express.json());
 app.get('/',(req,res)=>{
     res.status(200).sendFile(path.join(__dirname,'public','root.html'));
 })
+app.post('/submit',(req,res)=>{
+    const {
+        Longitude,
+        Latitude,
+        Housing_median_age,
+        Total_rooms,
+        Total_bedrooms,
+        Population,
+        Households,
+        Median_income,
+        Ocean_proximity
+    }=req.body;
+
+})
+
 server.listen(port,()=>{
     console.log(`Example app listening on port ${port}`);
 })
