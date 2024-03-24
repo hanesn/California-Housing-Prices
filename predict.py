@@ -33,3 +33,24 @@ elif ocean_proximity=='Near Bay':
     near_bay=True
 elif ocean_proximity=='Near Ocean':
     near_ocean=True
+
+inp=pd.DataFrame({
+    'longitude':[longitude],
+    'latitude':[latitude],
+    'housing_median_age':[housing_median_age],
+    'total_rooms':[total_rooms],
+    'total_bedrooms':[total_bedrooms],
+    'population':[population],
+    'households':[households],
+    'median_income':[median_income],
+    '<1H OCEAN':[h_ocean],
+    'INLAND':[inland],
+    'ISLAND':[island],
+    'NEAR BAY':[near_bay],
+    'NEAR OCEAN':[near_ocean],
+    'population_ratio':[population/total_bedrooms],
+    'room_ratio':[total_rooms/households]
+})
+inp=scalar.transform(inp)
+out=model.predict(inp)[0]
+print(f'{out:.2f}')
