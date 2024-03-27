@@ -1,6 +1,6 @@
 # California Housing Prices
 
-![cover](https://storage.googleapis.com/kaggle-datasets-images/5227/7876/3d18388d350d2791f4121a232acce097/dataset-cover.jpg?t=2017-11-24-13-55-38)
+![cover](https://image.cnbcfm.com/api/v1/image/106650418-1596664513851-gettyimages-1208365509-360738475_1-5.jpeg?v=1601568388&w=1600&h=500)
 
 This project is a web application that predicts housing prices in California based on various parameters. It integrates a machine learning model trained on historical housing data to provide accurate predictions.
 
