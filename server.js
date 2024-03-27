@@ -26,6 +26,18 @@ app.post('/submit',(req,res)=>{
         Ocean_proximity
     }=req.body;
 
+    pythonProcess=spawn('python',['predict.py',Longitude,Latitude,Housing_median_age,Total_rooms,Total_bedrooms,Population,Households,Median_income,Ocean_proximity]);
+
+    pythonProcess.stdout.on('data', (data) => {
+        const predictedValue = data.toString().trim();
+        // console.log('Predicted value:', predictedValue);
+        res.status(200).json({predictedValue});
+    });
+
+    pythonProcess.stderr.on('data', (data) => {
+        console.error('Error from Python script:', data.toString());
+        res.status(500).send('An error occurred during prediction.');
+    });
 })
 
 server.listen(port,()=>{
