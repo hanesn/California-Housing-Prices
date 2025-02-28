@@ -19,7 +19,7 @@ The data contains information from the 1990 California census. So although it ma
 If you want to run the application locally use following steps -
 
 - git clone `https://github.com/darthdaenerys/California-Housing-Prices.git`
-- Download `house_price_model.h5` from [Google Drive]([https://drive.google.com/file/d/1zt2qtvvsND2_wY3PAmXgw9yTWQLV6JpE/view?usp=sharing](https://drive.google.com/file/d/1jpxu7T7-LYMPFDQ6rg87ryHQDgKrs1jy/view?usp=sharing))
+- Download `house_price_model.h5` from [Google Drive](https://drive.google.com/file/d/1jpxu7T7-LYMPFDQ6rg87ryHQDgKrs1jy/view?usp=sharing)
 - Move the downloaded `house_price_model.h5` file into the models folder within the cloned repository.
 - Navigate to the project directory: `cd California-Housing-Prices`
 - Install Python dependencies: `pip install -r requirements.txt`
